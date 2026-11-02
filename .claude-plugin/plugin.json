@@ -1,0 +1,36 @@
+{
+  "name": "ai-crew",
+  "version": "0.2.0",
+  "description": "Hand tasks, missions and reviews to other AI agents (Codex, Gemini, Copilot, Cursor, Qwen, Ollama, a second Claude account or your own) and track their usage and performance. Bring your own logins.",
+  "author": {
+    "name": "Only-dean",
+    "url": "https://github.com/Only-dean"
+  },
+  "homepage": "https://github.com/Only-dean/ai-crew",
+  "repository": "https://github.com/Only-dean/ai-crew",
+  "license": "MIT",
+  "keywords": [
+    "delegation",
+    "multi-agent",
+    "codex",
+    "gemini",
+    "copilot",
+    "cursor",
+    "ollama",
+    "usage"
+  ],
+  "userConfig": {
+    "claudeWorkerDir": {
+      "type": "string",
+      "title": "Second Claude account folder",
+      "description": "Config folder of an optional second Claude account used as a worker (sign it in with CLAUDE_CONFIG_DIR=<folder> claude auth login). Leave as is if you have none.",
+      "default": "~/.claude-worker"
+    },
+    "customWorkersFile": {
+      "type": "string",
+      "title": "Custom workers file",
+      "description": "JSON file listing extra workers (any CLI that takes a prompt). See the README for the format.",
+      "default": "~/.config/ai-crew/workers.json"
+    }
+  }
+}

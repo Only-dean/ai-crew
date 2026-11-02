@@ -1,0 +1,15 @@
+{
+  "name": "ai-crew",
+  "owner": {
+    "name": "Only-dean"
+  },
+  "metadata": {
+    "description": "ai-crew: delegate tasks and reviews from Claude Code to Codex, Gemini, Copilot, Cursor, Qwen, Ollama and more, on your own accounts."
+  },
+  "plugins": [
+    {
+      "name": "ai-crew",
+      "source": "./"
+    }
+  ]
+}
